@@ -1,0 +1,88 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark: hsl(179, 100%, 13%)
+}
+
+body {
+  margin: 3em 1em;
+}
+
+.container {
+
+  height: 100vh;
+  padding: 1px;
+  border-radius: 7px;
+  display: grid;
+  grid-template-rows: repeat(3,1fr) ;
+}
+
+.container > .box1{
+background-color: var(--Bright-orange);
+padding: 3em;
+color:white;
+}
+
+.container > .box1 > h2 , .container > .box2 > h2,  .container > .box3 > h2{
+    font-size: 2.5em;
+}
+
+.container > .box1 > p , .container > .box2 > p,  .container > .box3 > p {
+    font-size: 1em;
+    width: 90%;
+}
+
+.container > .box2{
+    background-color: var(--Dark-cyan);
+    padding: 3em;
+    color:white;
+}
+
+.container > .box3{
+    background-color: var(--Very-dark);
+    padding: 3em;
+    color:white;
+}
+.container > .box1 > button{
+    color: var(--Bright-orange);
+    padding: 1em 2em;
+    border-radius: 3em ;
+    border: none;
+    margin-top: 1em;
+
+}
+
+.container > .box2 > button{
+    color: var(--Dark-cyan);
+    padding: 1em 2em;
+    border-radius: 3em ;
+    border: none;
+    margin-top: 1em;
+
+}
+
+.container > .box3 > button{
+    color: var(--Very-dark);
+    padding: 1em 2em;
+    border-radius: 3em ;
+    border: none;
+    margin-top: 1em;
+
+}
+
+@media(min-width:800px){
+    body {
+        margin:0;
+      }
+    .container{
+        grid-template-columns: repeat(3,1fr);
+        /* align-items: center;
+        justify-content: center;
+        display: f
+        lex; */
+      height: 70vh;
+      padding-top: 10em;
+    padding-left: 5em;
+    padding-right: 5em;
+    }
+}
