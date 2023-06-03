@@ -1,7 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+  
+
+
 :root{
     --Bright-orange: hsl(31, 77%, 52%);
     --Dark-cyan: hsl(184, 100%, 22%);
-    --Very-dark: hsl(179, 100%, 13%)
+    --Very-dark: hsl(179, 100%, 13%);
+    --Big-shoulder: 'Big Shoulders Display', cursive;
+    --Lexend: 'Lexend Deca', sans-serif;
 }
 
 body {
@@ -25,11 +33,13 @@ color:white;
 
 .container > .box1 > h2 , .container > .box2 > h2,  .container > .box3 > h2{
     font-size: 2.5em;
+    font-family: var(--Big-shoulder);
 }
 
 .container > .box1 > p , .container > .box2 > p,  .container > .box3 > p {
-    font-size: 1em;
-    width: 90%;
+    font-size: 15px;
+    width: 92%;
+    font-family: var(--Lexend);
 }
 
 .container > .box2{
@@ -49,7 +59,7 @@ color:white;
     border-radius: 3em ;
     border: none;
     margin-top: 1em;
-
+    font-family: var(--Lexend);
 }
 
 .container > .box2 > button{
@@ -58,7 +68,7 @@ color:white;
     border-radius: 3em ;
     border: none;
     margin-top: 1em;
-
+font-family: var(--Lexend);
 }
 
 .container > .box3 > button{
@@ -67,10 +77,18 @@ color:white;
     border-radius: 3em ;
     border: none;
     margin-top: 1em;
+    font-family: var(--Lexend);
 
 }
 
-@media(min-width:800px){
+.container > .box1 > button:hover, .container > .box2 > button:hover, .container > .box3 > button:hover{
+    color:white;
+    background-color: transparent;
+    border: 1px solid white;
+  
+}
+
+@media(min-width:1000px){
     body {
         margin:0;
       }
